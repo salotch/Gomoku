@@ -1,6 +1,6 @@
 from Board import GomokuBoard, Board
 from GameEngine import GameEngine
-from Player import Player, HumanPlayer
+from Player import Player, HumanPlayer , AIMinimaxPlayer
 
 # player = HumanPlayer('o', 'maro')
 #
