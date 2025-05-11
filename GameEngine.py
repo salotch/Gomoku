@@ -1,5 +1,7 @@
 from Board import GomokuBoard, Board
-from Player import Player, HumanPlayer
+from Player import Player, AIMinimaxPlayer
+
+
 class GameEngine:
     def __init__(self, player1: Player, player2: Player, board: Board):
         self.player1 = player1
@@ -11,6 +13,8 @@ class GameEngine:
         self.board.display_board()
         while(self.board.is_draw() == False):
 
+            if(isinstance(current_player,AIMinimaxPlayer)):
+                current_player.board=self.board
             x, y = current_player.get_next_move()
             while(self.board.update_board(x, y, current_player.symbol) == False):
                 x, y = current_player.get_next_move()
