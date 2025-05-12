@@ -1,5 +1,5 @@
 from Board import GomokuBoard, Board
-from Player import Player, AIMinimaxPlayer
+from Player import AIAlphaBetaPruningPlayer, Player, AIMinimaxPlayer
 
 
 class GameEngine:
@@ -14,6 +14,8 @@ class GameEngine:
         while(self.board.is_draw() == False):
 
             if(isinstance(current_player,AIMinimaxPlayer)):
+                current_player.board=self.board
+            if(isinstance(current_player,AIAlphaBetaPruningPlayer)):
                 current_player.board=self.board
             x, y = current_player.get_next_move()
             while(self.board.update_board(x, y, current_player.symbol) == False):

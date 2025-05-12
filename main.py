@@ -1,6 +1,6 @@
 from Board import GomokuBoard, Board
 from GameEngine import GameEngine
-from Player import Player, HumanPlayer , AIMinimaxPlayer
+from Player import AIAlphaBetaPruningPlayer, Player, HumanPlayer , AIMinimaxPlayer
 
 # player = HumanPlayer('o', 'maro')
 #
@@ -9,6 +9,6 @@ from Player import Player, HumanPlayer , AIMinimaxPlayer
 # print(player.symbol)
 
 
-game = GameEngine(HumanPlayer('X', 'Maro'), AIMinimaxPlayer("O","AI"), GomokuBoard())
+game = GameEngine(HumanPlayer('X', 'Maro'), AIAlphaBetaPruningPlayer("O","AI"), GomokuBoard())
 game.play()
 
