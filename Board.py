@@ -130,11 +130,11 @@ class GomokuBoard(Board):
         return self.n_moves >= self.num_rows * self.num_columns
     
     def display_board(self):
-        for row in self.grid:
+        for row in self.board:
             print(' '.join(row))
         print()
 
     def reset_board(self):
         print("Resetting board")
-        self.board = [['.' for _ in range(self.num_columns)] for _ in range(self.num_rows)]
+        self.board = [[' ' for _ in range(self.num_columns)] for _ in range(self.num_rows)]
         self.n_moves = 0
