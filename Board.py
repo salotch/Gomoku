@@ -39,7 +39,10 @@ class Board(ABC):
     @abstractmethod
     def is_draw(self):
         pass
-
+     
+    @abstractmethod
+    def reset_board(self):
+        pass
 
 class GomokuBoard(Board):
 
@@ -125,3 +128,13 @@ class GomokuBoard(Board):
 
     def is_draw(self):
         return self.n_moves >= self.num_rows * self.num_columns
+    
+    def display_board(self):
+        for row in self.grid:
+            print(' '.join(row))
+        print()
+
+    def reset_board(self):
+        print("Resetting board")
+        self.board = [['.' for _ in range(self.num_columns)] for _ in range(self.num_rows)]
+        self.n_moves = 0

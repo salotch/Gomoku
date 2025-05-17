@@ -9,6 +9,5 @@ from Player import AIAlphaBetaPruningPlayer, Player, HumanPlayer , AIMinimaxPlay
 # print(player.symbol)
 
 
-game = GameEngine(HumanPlayer('X', 'Maro'), AIAlphaBetaPruningPlayer("O","AI"), GomokuBoard())
+game = GameEngine(HumanPlayer('X', 'Maro'), AIAlphaBetaPruningPlayer("O","AI"), GomokuBoard(15,15))
 game.play()
-
