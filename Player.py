@@ -8,7 +8,6 @@ class Player(ABC):
         self.y = None
         self.symbol = symbol
         self.name = name
-
     @abstractmethod
     def get_next_move(self):
         pass

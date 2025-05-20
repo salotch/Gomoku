@@ -136,5 +136,5 @@ class GomokuBoard(Board):
 
     def reset_board(self):
         print("Resetting board")
-        self.board = [[' ' for _ in range(self.num_columns)] for _ in range(self.num_rows)]
+        self.board = [['.' for _ in range(self.num_columns)] for _ in range(self.num_rows)]
         self.n_moves = 0
