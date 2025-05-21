@@ -27,9 +27,9 @@ Explore the full high-fidelity UI/UX prototype:
 
 ## 🧩 Demo & Screenshots
 
-| Home Screen                            | Game Board                               | Mode Selection                            |
-| -------------------------------------- | ---------------------------------------- | ----------------------------------------- |
-| ![Home](assets/images/frame0/home.png) | ![Board](assets/images/frame2/board.png) | ![Choice](assets/images/frame1/image.png) |
+| Home Screen                     | Game Board                        | Mode Selection                      |
+| ------------------------------- | --------------------------------- | ----------------------------------- |
+| ![Home](assets/design/home.png) | ![Board](assets/design/board.png) | ![Choice](assets/design/choose.png) |
 
 📦 **Executable:** Included in the repository under `dist/GomokuGame.exe`
 
